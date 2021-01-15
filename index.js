@@ -90,5 +90,5 @@ app.use((error, req, res, next)=>{
     res.status(error.httpStatusCode).json(error.message)
 })
 
-//app.listen(80)
-app.listen(80);
+var porta = process.env.PORT || 8080;
+app.listen(porta);
